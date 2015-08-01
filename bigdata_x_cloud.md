@@ -118,12 +118,13 @@ Lambdaを使うことでイベント駆動のサービスを簡単に実装で�
 * Boost : 共有の余っているリソースを使用
 
 ### Streaming Import
-
+```
 Fluentd -> MessagePack -> API Server -> Import Queue -> Import worker
 
 Import Worker -> Real-time storage
 時間がたったら
 Realtime storage -> Archive Storage
+```
 
 * Realtime storageとArchive StorageはDBフォーマットが異なる。
 QueneはRealtime storageとArchive Storageの二つに投げる
